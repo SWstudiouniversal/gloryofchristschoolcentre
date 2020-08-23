@@ -1,0 +1,145 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppind', sans-serif;
+}
+section
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: url(gc31.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    clip-path: circle(0px at center);
+}
+
+/* menu */
+
+ul
+{
+margin-left: -150px;
+margin-top: 0px;
+}
+
+ul li
+{
+	display: inline;
+	margin-left: 200px;
+}
+ul li a
+	{
+		position: absolute;
+		text-align: center;
+		padding: 10px 25px;
+		color: #fff;
+		font-size: 24px;
+		text-decoration: none;
+		font-family: sans-serif;
+		box-sizing: border-box;
+		background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+		background-size: 400%;
+		border-radius: 30px;
+		z-index: 1;
+	}
+
+ul li a:hover
+	{
+		animation: animate 8s linear infinite;
+	}
+
+	@keyframes animate
+	{
+		0%
+		{
+			background-position: 0%;
+		}
+		100%
+		{
+			background-position: 400% ;
+		}
+	}
+
+ul li a:before
+	{
+		content: '';
+		position: absolute;
+		top: -5px;
+		left: -5px;
+		right: -5px;
+		bottom: -5px;
+		z-index: -1;
+		background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+		background-size: 400%;
+		border-radius: 40px;
+		opacity: 0;
+		transition: .5s;
+	}
+
+ul li a:hover:before
+	{
+		filter: blur(20px);
+		opacity: 1;
+		animation: animate  8s linear infinite;
+	}
+/* end of menu */
+.container
+{
+    position: relative;
+    margin-top: 200vh;
+    background: #fff;
+    padding: 5px 40px;
+}
+.container
+{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.container h2
+{
+  font-size: 50px;
+  background: blue;
+  padding: 5px 30px;
+  color: white;
+  text-shadow: 2px 2px 2px red;
+}
+.title
+{
+    position: relative;
+    top: 250px;
+    z-index: 1;
+    font-size: 3em;
+    text-align: center;
+    width: 100%;
+}
+.last
+{
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: red;
+	font-family: consolas;
+	overflow: hidden;
+	white-space: nowrap;
+	animation: type 20s steps(115) infinite;
+}
+@keyframes type {
+				0%{width: 0ch;}
+				100%{width: 115ch;}
+}
+/** footer **/
+
+footer
+{
+	background: red;
+	padding: 10px;
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+	font-size: 20px;
+	color: #fff;
+}
