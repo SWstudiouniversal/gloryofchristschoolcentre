@@ -125,11 +125,11 @@ ul li a:hover:before
 	font-family: consolas;
 	overflow: hidden;
 	white-space: nowrap;
-	animation: type 20s steps(115) infinite;
+	animation: type 20s steps(118) infinite;
 }
 @keyframes type {
 				0%{width: 0ch;}
-				100%{width: 115ch;}
+				100%{width: 118ch;}
 }
 /** footer **/
 
